@@ -19,3 +19,11 @@ class Solution:
                     max_profit=profit
         
         return max_profit
+
+'''
+Solution explanation:
+
+Here min price starts at infinity and max price starts at 0. For each price, if it is less than min price, then min price is updated. Else, profit is measured. If profit is greater than current max profit, max 
+profit is updated to current profit. The if condition for profit is used since the most minimum price does not ensure biggest profit. Eg: Assume [5,2,3,4,8,1,5,4]. Here, min price is 1, but it gives a max profit
+of 4(ie, 5-1). 6(ie,8-2) is the highest profite obtainable. We return the maximum profit.
+'''
